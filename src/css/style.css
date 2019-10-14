@@ -1,0 +1,286 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    font-size: 2rem;
+}
+
+h5,
+h3 {
+    color: white;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.step-box {
+    margin-top: 20%;
+}
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 200px;
+}
+
+.btn-outline {
+    background-color: hsl(322, 100%, 66%);
+    -webkit-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 28px -6px rgba(0, 0, 0, 0.75);
+}
+
+.btn-block {
+    padding: 2% 10%;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*NAVBAR*/
+a.head-link {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 200px;
+    color: hsl(322, 100%, 66%);
+    font-weight: bold;
+}
+
+div.nav {
+    margin-left: auto;
+}
+
+img.logo {
+    width: 150px;
+    float: left;
+}
+
+/*HEADER*/
+.top {
+    text-align: center;
+}
+
+p.content {
+    padding: 5% 20%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333447;
+}
+
+.screen-content {
+    margin-top: 5%;
+}
+
+.screen-content img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*INFO*/
+.info {
+    padding: 7% 0 20% 0;
+    position: relative;
+}
+
+.info-box img {
+    width: 30px;
+}
+
+.info-box {
+    padding: 0 13%;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.info p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333447;
+}
+
+#a-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+}
+
+/*STEP BOX*/
+.info-step-box .col-6:last-child {
+    text-align: center;
+}
+
+.step-screen {
+    width: 80%;
+}
+
+.step-box-one {
+    background-color: hsl(207, 100%, 98%);
+    position: relative;
+}
+
+.step-content {
+    padding: 3% 7%;
+    font-weight: 600;
+    text-align: justify;
+    color: #333447;
+}
+
+.step-head {
+    padding: 2% 7%;
+}
+
+.flowing-conversation {
+    position: relative;
+    padding-bottom: 20%;
+}
+
+.your-users {
+    background-color: hsl(207, 100%, 98%);
+}
+
+#b-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*BOTTOM*/
+.bottom {
+    text-align: center;
+    position: relative;
+    padding-bottom: 25%;
+}
+
+.bottom h1 {
+    margin: 5% 0;
+}
+
+/*FOOTER*/
+footer {
+    background-color: hsl(192, 100%, 9%);
+}
+
+footer p {
+    color: white;
+}
+
+img[alt="footer-logo"] {
+    width: 40%;
+}
+
+.article-footer {
+    padding: 0 20% 0 20%;
+}
+
+.subscribe {
+    padding: 10% 0 0 20%;
+}
+
+.article-footer p {
+    padding-top: 5%;
+}
+
+.contact-box {
+    margin: 5% 0;
+}
+
+.contact-box img {
+    float: left;
+    margin-right: 5%;
+}
+
+#footer-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.input {
+    padding: 10px 100px 10px 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    margin-right: 5%;
+}
+
+.foot-button {
+    background-color: hsl(322, 100%, 66%);
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+
+ul.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 10% 5% 0 0;
+}
+
+.fa-2x {
+    color: white;
+}
